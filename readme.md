@@ -85,6 +85,10 @@ Cons:
 
 ![pipeline](./img/pipeline.drawio.png)
 
+Sample table structure: [supabase/tables.sql](supabase/tables.sql)
+
+Sample server: [server/app.py](server/app.py)
+
 1. Video Submission:
    - Users submit videos via the `/public/video` endpoint.
    - The server adds the video URL to the `videos` table and creates an entry in the `video_processing_queue` table.
@@ -107,4 +111,4 @@ Cons:
    - Non-fatal errors allow for automatic retries, with the `retry` count tracked in the queue.
 
 6. Scalability:
-   - The queue-based system allows for easy horizontal scaling by adjusting the number of workers and threads in `gunicorn.py`.
+   - The queue-based system allows for easy horizontal scaling by adjusting the number of workers and threads in [gunicorn.py](server/gunicorn.py).
