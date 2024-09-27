@@ -58,3 +58,13 @@ while being faster and less resource-intensive than relying purely on a neural n
 
 Besides, we were able to run this setup on a mobile device at 25FPS,
 so the powerful hardware requirement becomes a bit more lax.
+
+Pros:
+
+- Good accuracy.
+- Realtime processing speed (or faster).
+- Cheaper to run.
+
+Cons:
+
+- Less accurate than pure CNN inference.
