@@ -85,9 +85,9 @@ Cons:
 
 ![pipeline](./img/pipeline.drawio.png)
 
-Sample table structure: [supabase/tables.sql](supabase/tables.sql)
+Sample table structure: [supabase/tables.sql](../supabase/tables.sql)
 
-Sample server: [server/app.py](server/app.py)
+Sample server: [server/app.py](../server/app.py)
 
 1. Video Submission:
    - Users submit videos via the `/public/video` endpoint.
