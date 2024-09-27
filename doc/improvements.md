@@ -11,7 +11,7 @@ There are a few alternatives that could be explored here:
 1. Replacing OpenCV with a CNN (convolutional neural network) based model:
    - YOLO model
    - SSD model
-2. A combination of a CNN with OpenCV: CNN for object detection, OpenCV for object continuity tracking.
+2. A combination of a CNN with OpenCV: CNN for object detection, OpenCV for object tracking.
 
 ### YOLO
 
@@ -52,6 +52,9 @@ and interpolate between these using OpenCV object tracking.
 This way we get an expensive, accurate detection from time to time,
 and keep track of the detected object using a cheaper method.
 
-We have a project in our portfolio that uses this exact mechanism.
+We have a project in our portfolio that uses this exact mechanism, using YOLO.
 Upon testing, this method yielded much more accurate object detection compared to OpenCV,
 while being faster and less resource-intensive than relying purely on a neural network-based solution.
+
+Besides, we were able to run this setup on a mobile device at 25FPS,
+so the powerful hardware requirement becomes a bit more lax.
